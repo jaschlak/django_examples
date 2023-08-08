@@ -53,6 +53,6 @@ def monthly_challenge(request,month):
     try:
         challenge_text = monthly_challenges[month.lower()]
         response_date = render_to_string("challenges/challenge.html")
-        return HttpResponse("<h1>{}</h1>".format(challenge_text))
+        return HttpResponse(response_date)
     except:
         return HttpResponseNotFound("<h1>This month is not supported!</h1>")
