@@ -20,37 +20,17 @@ monthly_challenges = {
     "december":"Juggle on a ball"
     }
 
-
-'''
-# static view routes
-def january(request):
-    return HttpResponse("Eat no meat for the entire month!")
-
-def february(request):
-    return HttpResponse("Walk at least 20 minutes every day!")
-'''
-
-'''
-
-def monthly_challenge_by_number(request,month):
-    return HttpResponse(month)
-
-# dynamic view route
-def monthly_challenge(request,month):
-    challenge_text = None
+def index(request):
     
-    if month == 'january':
-        challenge_text = "Eat no meat for the entire month!"
-    elif month == 'february':
-        challenge_text = "Walk at least 20 minutes every day!"
-    elif month == 'march':
-        challenge_text = "Learn Django for at least 20 minutes every day!"
-    else:
-        return HttpResponseNotFound("This month is not supported!")
+    response_data = """
+        <ul>
+            <li><a href="/challenges/january">January</a></li>
+            <li><a href="/challenges/february">February</a></li>
+            <li><a href="/challenges/march">March</a></li>
+        </ul>
+    """
     
-    return HttpResponse(challenge_text)
-
-'''
+    return HttpResponse(response_data)
 
 def monthly_challenge_by_number(request,month):
 
