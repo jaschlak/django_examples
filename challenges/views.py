@@ -22,13 +22,15 @@ monthly_challenges = {
 
 def index(request):
     
-    response_data = """
-        <ul>
-            <li><a href="/challenges/january">January</a></li>
-            <li><a href="/challenges/february">February</a></li>
-            <li><a href="/challenges/march">March</a></li>
-        </ul>
-    """
+    list_items = ""
+    months = list(monthly_challenges.keys())
+    
+    for month in months:
+        capitalized_month = month.capitalize()
+        month_path = reverse("month-challenge", args=[month])
+        list_items += "<li><a href=\"{}\">{}</a></li>".format(month_path,capitalized_month)
+    
+    response_data = "<ul>{}</ul>".format(list_items)
     
     return HttpResponse(response_data)
 
