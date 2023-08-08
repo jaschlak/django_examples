@@ -15,6 +15,9 @@ def february(request):
 '''
 
 
+def monthly_challenge_by_number(request,month):
+    return HttpResponse(month)
+
 # dynamic view route
 def monthly_challenge(request,month):
     challenge_text = None
