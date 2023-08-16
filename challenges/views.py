@@ -18,7 +18,8 @@ monthly_challenges = {
     "september":"Put a rose on a forehead",
     "october":"rock socks",
     "november":"Be gone until November",
-    "december":"Juggle on a ball"
+    "december":"Juggle on a ball",
+    "flembuary": None
     }
 
 def index(request):
