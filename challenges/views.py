@@ -54,7 +54,7 @@ def monthly_challenge(request,month):
         challenge_text = monthly_challenges[month.lower()]
         #response_date = render_to_string("challenges/challenge.html")
         return render(request, "challenges/challenge.html", {
-            "month": month.capitalize(),
+            "month_name": month.capitalize(),
             "text": challenge_text,
             })
     except:
