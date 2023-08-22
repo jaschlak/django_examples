@@ -11,3 +11,6 @@
     # Slides showing concepts
     https://github.com/academind/django-practical-guide-course-code/tree/urls-views-zz-extra-files
     
+    # Front End Fonts
+    https://fonts.google.com/
+    
