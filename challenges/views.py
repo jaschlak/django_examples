@@ -7,16 +7,16 @@ from django.urls import reverse
 
 
 monthly_challenges = {
-    "january":"Eat no meat for the entire month!",
+    "january":"Get more money",
     "february":"Walk at least 20 minutes every day!",
     "march":"Learn Django for at least 20 minutes every day!",
     "april":"Do the duggie all night and all day",
     "may":"Look at your toes like you want to lick them with your fingers",
-    "june":"Eat chicken wings once a week",
+    "june":"Try to get better at Roblox Studio",
     "july":"Eat frogs once",
-    "august":"Get apple",
+    "august":"Become a youtuber",
     "september":"Put a rose on a forehead",
-    "october":"rock socks",
+    "october":"Try to do more stuff!",
     "november":"Be gone until November",
     "december":"Juggle on a ball",
     "flembuary": None
