@@ -14,3 +14,5 @@
     # Front End Fonts
     https://fonts.google.com/
     
+    # Django Model Fields
+    https://docs.djangoproject.com/en/4.2/ref/models/fields/
