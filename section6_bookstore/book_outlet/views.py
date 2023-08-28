@@ -11,8 +11,12 @@ def index(request):
         })
 
 def book_detail(request, id):
+    try:
+        book = Book.objects.get(pk=id)
     
-    book = Book.objects.get(pk=id)
+    except:
+        raise Http404()
+        
     return render(request, "book_outlet/book_detail.html", {
             "title": book.title,
             "author": book.author,
