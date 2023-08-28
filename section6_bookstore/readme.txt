@@ -12,8 +12,10 @@
         python manage.py migrate
         
         # Test insert/select data in db using interactive shell
-        python manage.py shell
-        from book_outlet.models import Book
-        harry_potter = Book(title="Harry Potter 1 - The Philosopher's Stone", rating=5)         # creates an object in python, didn't push
-        harry_potter.save()                                                                     # saves to db
-        Book.objects.all()                                                                      # get all books from db in a python object
+            python manage.py shell
+            from book_outlet.models import Book
+            harry_potter = Book(title="Harry Potter 1 - The Philosopher's Stone", rating=5)         # creates an object in python, didn't push
+            harry_potter.save()                                                                     # saves to db
+            Book.objects.all()                                                                      # get all books from db in a python object
+            Book.objects.all()[0].title
+        
