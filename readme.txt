@@ -16,3 +16,15 @@
     
     # Django Model Fields
     https://docs.djangoproject.com/en/4.2/ref/models/fields/
+    
+    # Django Model Filters (field lookups)
+    https://docs.djangoproject.com/en/4.2/topics/db/queries/
+    
+    # Delete multiple model instances (i.e. database records) at once: 
+    https://docs.djangoproject.com/en/3.1/topics/db/queries/#deleting-objects
+
+    # Update multiple model instances (i.e. database records) at once: 
+    https://docs.djangoproject.com/en/3.0/ref/models/querysets/#bulk-update
+
+    # Create multiple model instances (i.e. database records) at once: 
+    https://docs.djangoproject.com/en/3.0/ref/models/querysets/#bulk-create
