@@ -13,10 +13,10 @@ class Book(models.Model):
     is_bestselling = models.BooleanField(default=False)  # default null values to False
     
     # can use model name in url IE http://localhost:8000/<Book.title value>, fills space with -
-    slug = models.SlugField(default="", null=False) 
+    slug = models.SlugField(default="", null=False, db_index=True) 
     
     def get_absolute_url(self):
-        return reverse("book-detail",args=[self.id])
+        return reverse("book-detail",args=[self.slug])
     
     # override built in save method and pass args to built in method
     def save(self, *args, **kwargs):
