@@ -18,12 +18,17 @@ class Book(models.Model):
     def get_absolute_url(self):
         return reverse("book-detail",args=[self.slug])
     
+    '''
+    note: save method not necessary after making the admin model 
+                                         and pre-populating slug
+    
     # override built in save method and pass args to built in method
     def save(self, *args, **kwargs):
         
         self.slug = slugify(self.title) # slug the Book model's title
 
         super().save( *args, **kwargs)  # make sure djangos method still called
+    '''
     
     def __str__(self):
         return "{} ({})".format(self.title, self.rating)
