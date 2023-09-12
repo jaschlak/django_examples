@@ -12,7 +12,7 @@ class Book(models.Model):
     # Id created automatically
     title = models.CharField(max_length=50) # From django model fields
     rating = models.IntegerField(validators=[MinValueValidator(1), MaxValueValidator(5)])
-    author = models.ForeignKey(to=Author, on_delete=models.CASCADE, null=True) # null values acceptable
+    author = models.ForeignKey(to=Author, on_delete=models.CASCADE, null=True, related_name="books") # related names instead of <pk model>_set
     is_bestselling = models.BooleanField(default=False)  # default null values to False
     
     # can use model name in url IE http://localhost:8000/<Book.title value>, fills space with -

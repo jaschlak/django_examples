@@ -46,3 +46,4 @@
             from django.db.models import Q
             Book.objects.filter(Q(rating.lte=3 |) | Q(is_bestselling=True))
             
+        
