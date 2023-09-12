@@ -4,7 +4,7 @@ save_data_on_exit = True
 save_history = True
 save_non_project_files = False
 project_type = 'empty-project-type'
-recent_files = ['book_store\\settings.py', 'book_outlet\\views.py', 'book_outlet\\urls.py', 'book_outlet\\templates\\book_outlet\\book_detail.html', 'book_store\\urls.py', 'book_outlet\\templates\\book_outlet\\base.html', 'book_outlet\\templates\\book_outlet\\index.html', 'book_outlet\\models.py', 'C:\\Users\\jasadmin\\.spyder-py3\\temp.py']
+recent_files = ['book_store\\settings.py', 'book_outlet\\views.py', 'book_outlet\\urls.py', 'book_outlet\\templates\\book_outlet\\book_detail.html', 'book_store\\urls.py', 'book_outlet\\templates\\book_outlet\\base.html', 'book_outlet\\templates\\book_outlet\\index.html', 'book_outlet\\models.py', 'C:\\Users\\jasadmin\\.spyder-py3\\temp.py', 'book_outlet\\admin.py']
 
 [main]
 version = 0.2.0
