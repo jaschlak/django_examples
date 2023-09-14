@@ -7,10 +7,14 @@
     <title>Document</title>
   </head>
   <body>
-    <form novalidate method="POST">
-      {% csrf_token %}
-      {{ form }}
-      <button type="submit">Send</button>
+    <div class="form-control" {% if form.user_name.errors %} errors {% endif %}>
+        <form novalidate method="POST">
+          {% csrf_token %}
+          {{ form.user_name.label_tag }}
+          {{ form.user_name }}
+          {{ form.user_name.errors }}
+          <button type="submit">Send</button>
+    </div>
     </form>
   </body>
 </html>
